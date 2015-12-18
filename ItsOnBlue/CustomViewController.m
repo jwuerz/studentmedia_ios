@@ -1,0 +1,40 @@
+//
+//  CustomViewController.m
+//  ItsOnBlue
+//
+//  Created by Daniela Beraldo on 6/22/15.
+//  Copyright (c) 2015 Daniela Beraldo. All rights reserved.
+//
+
+#import "CustomViewController.h"
+
+@interface CustomViewController ()
+
+@end
+
+@implementation CustomViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+   NSURL *url = [NSURL URLWithString:@"http://www.mobileisustudentmedia.com"];
+    [_MyPage loadRequest:[NSURLRequest requestWithURL:url]];
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
